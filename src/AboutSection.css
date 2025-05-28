@@ -1,0 +1,75 @@
+.about-section {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: left;
+    font-family: Lato, arial, sans-serif;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Lato, arial, sans-serif;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgb(145, 145, 145);
+    font-family: Lato, arial, sans-serif;
+    font-weight: 400;
+}
+
+.about-section a {
+    color: #f7f7f7;
+    text-decoration: underline;
+}
+
+.about-section a:hover {
+    color: #e0e0e0;
+}
+
+.about-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        text-align: left;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+
+    .about-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

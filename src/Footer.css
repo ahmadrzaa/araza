@@ -1,0 +1,114 @@
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(145, 145, 145);
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.social-media-icons {
+    margin-bottom: 10px;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.instagram {
+    color: #E1306C; /* Instagram color */
+}
+
+.linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+
+.twitter {
+    color: #1DA1F2; /* Twitter color */
+}
+
+.youtube {
+    color: #FF0000; /* YouTube color */
+}
+
+.github {
+    color: #333; /* GitHub color */
+}
+
+.facebook {
+    color: #4267B2; /* Facebook color */
+}
+
+.whatsapp {
+    color: #25D366; /* WhatsApp color */
+}
+
+.coffee {
+    color: #FFDD00; /* Buy Me a Coffee color */
+}
+
+.stackoverflow {
+    color: #F48024; /* Stack Overflow color */
+}
+
+.slack {
+    color: #4A154B; /* Slack color */
+}
+
+.footer p {
+    color: rgb(145, 145, 145);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-family: Lato, arial, sans-serif;
+    font-weight: 200px;
+}
+
+.footer .email {
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+}
+
+.footer .email:hover {
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .social-media-icons a {
+        margin: 0 5px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-icons a {
+        margin: 0 3px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+    }
+}

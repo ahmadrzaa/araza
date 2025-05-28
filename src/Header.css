@@ -1,0 +1,173 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(226, 226, 226);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+    text-align: left;
+    flex: 1;
+}
+
+.logo h1 {
+    margin: 10px;
+    font-size: 24px;
+   
+    font-weight: 700px;
+    font-family: Lato, arial, sans-serif;
+}
+
+.nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Lato, arial, sans-serif;
+    position: relative;
+    transition: color 0.3s;
+    font-weight:  400px;
+    background-color: transparent;
+}
+
+.nav a.active,
+.nav a:hover {
+    color: #f7f7f7;
+}
+
+.nav a.active::after,
+.nav a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f7f7f7;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: rgb(226, 226, 226);
+    margin-left: auto;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .header {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .header-content {
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .logo {
+        text-align: left;
+        flex: none;
+    }
+    
+    .toggle {
+        display: block;
+        font-size: 28px;
+        margin-right: 10px; /* Adjust the margin to keep the toggle inside the screen */
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: rgb(22, 22, 22);
+        color: rgb(247, 247, 247);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 2000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .side-menu.open {
+        transform: translateX(0);
+    }
+    
+    .side-menu .close {
+        align-self: flex-end;
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .side-menu li {
+        margin: 15px 0;
+        width: 100%;
+    }
+    
+    .side-menu a {
+        color: rgb(247, 247, 247);
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+        display: block;
+        text-align: left;
+        font-weight: 500;
+        overflow-wrap: break-word;
+        font-family: Lato, arial, sans-serif;
+    }
+    
+    .side-menu a.active,
+    .side-menu a:hover {
+        color: #f1e0e0;
+    }
+}
