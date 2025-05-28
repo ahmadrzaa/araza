@@ -18,10 +18,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#home" className="active">Home</a></li>
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#links">Links</a></li>
-                       <li><a href="#links"> Shop</a></li>
-                        <li><a href="#Project">Project</a></li>
-                       
+                        <li><a href="#links">Project</a></li>
                         <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </nav>
@@ -35,9 +32,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#home" className="active">Home</a></li>
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#links">Links</a></li>
-                        <li><a href="#links"> Shop</a></li>
-                        <li><a href="#Project">Project</a></li>
+                        <li><a href="#links">Project</a></li>
                         <li><a href="#contact">Contact Me</a></li>
                        
                     </ul>

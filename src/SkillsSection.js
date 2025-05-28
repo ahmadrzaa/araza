@@ -8,7 +8,7 @@ const SkillsSection = () => {
             <div className="skills-content">
                 <div className="skill">
                     <h3>Java Full Stack</h3>
-                    <p>Year of experience</p>
+                    <p>2 Year of experience</p>
                     <div className="icons">
                         <img src="./icons/javascript.png" alt="JavaScript" />
                         <img src="./icons/java (1).png" alt="Java" />
@@ -18,7 +18,7 @@ const SkillsSection = () => {
                 </div>
                 <div className="skill">
                     <h3>Data Analytics & AI</h3>
-                    <p>6 Months experience</p>
+                    <p>1 Year experience</p>
                     <div className="icons">
                         <img src="./icons/tens.png" alt="TensorFlow" />
                         <img src="./icons/python.png" alt="Pandas" />
