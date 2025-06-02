@@ -54,7 +54,7 @@ const SliderComponent = () => {
             image: '/images/arbg main.jpeg',
             heading: 'iGA Government Bahrain',
             subheading: 'Bahrain International eGov Forum',
-            more: 'Showcased national AI chatbot strategies and participated in eGov innovation discussions.'
+            more: 'First visit to a government office in Bahrain related to ongoing project work.'
         },
         {
         id: 2,
